@@ -33,11 +33,11 @@ wchar_t* getTime(wchar_t* buff,size_t size){
 	/* センター */
 	struct tm center;
 	center.tm_sec = 0;
-	center.tm_min = 0;
-	center.tm_hour = 9;
-	center.tm_mday = 16;
-	center.tm_wday = 6;
-	center.tm_mon = 0;
+	center.tm_min = 40;
+	center.tm_hour = 8;
+	center.tm_mday = 25;
+	center.tm_wday = 0;
+	center.tm_mon = 1;
 	center.tm_year = 110;
 	center.tm_isdst = -1;
 	time_t center_day = mktime(&center);
@@ -48,7 +48,7 @@ wchar_t* getTime(wchar_t* buff,size_t size){
 	int hour = (diff % (24*3600)) / 3600;
 	int min = (diff % 3600) / 60;
 	int sec = diff % 60;
-	swprintf_s(buff,size,L"センターまで%02d日%02d:%02d:%02d %04d/%02d/%02d %02d:%02d:%02d",
+	swprintf_s(buff,size,L"国立二次まで%02d日%02d:%02d:%02d %04d/%02d/%02d %02d:%02d:%02d",
 		day,hour,min,sec,
 		st.wYear,st.wMonth,st.wDay,st.wHour,st.wMinute,st.wSecond
 	);
