@@ -25,5 +25,5 @@ http://pc.watch.impress.co.jp/docs/column/config/20130201_585924.html
 
 License
 =====
-GPL v3 or later
+AGPL v3 or later
 
